@@ -80,16 +80,33 @@ function App() {
         <div className="w-full h-[100svh] fixed bg-[#0f0f0f96] backdrop-blur-sm flex flex-col justify-center items-center">
           {winModal === true ? (
             <>
-              <div className="text-[black] font-[rubik] w-[150px] h-[100px] rounded-lg border-[2px] border-[#40e9f2]">
+              <div className="fixed w-full h-[100svh] flex justify-center items-center">
+                <div class="confetti  w-full">
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                  <div class="confetti-piece"></div>
+                </div>
+              </div>
+              <div className="text-[black] font-[rubik] w-[150px] h-[100px] rounded-lg border-[2px] border-[#40e9f2] z-50">
                 <div className="w-full h-[50px] bg-[#40e9f2] flex justify-center items-center text-[20px] ">
                   Won
                 </div>
                 <div className="w-full h-[50px] text-white  flex justify-center items-center text-[17px] ">
-                  Score : 2000
+                  Score : {rem * 100}
                 </div>
               </div>
               <div
-                className="w-[150px] h-[50px] rounded-lg bg-[#40e9f2] hover:bg-[#45c4cb]  text-[black] mt-[15px] cursor-pointer text-[17px] font-[rubik] flex justify-center items-center"
+                className="w-[150px] h-[50px] rounded-lg bg-[#40e9f2] hover:bg-[#45c4cb]  text-[black] mt-[15px] cursor-pointer text-[17px] font-[rubik] flex justify-center items-center z-50"
                 onClick={() => {
                   setmedium(0);
                   setRes();
@@ -137,7 +154,7 @@ function App() {
         style={{ transition: ".5s" }}
       >
         <div className="text-white text-[50px] font-[rubik] font-bold flex justify-center items-end h-[60px] mt-[20px]">
-          <FaBomb className="text-[70px] mb-[19px]" />
+          <FaBomb className="text-[70px] mb-[19px] text-[orange]" />
           <span className="h-full flex justify-start items-end ">MINE IT</span>
         </div>
         {gameStart === true ? (

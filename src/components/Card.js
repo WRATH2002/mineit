@@ -57,7 +57,7 @@ const Card = (props) => {
       {pre === true ? (
         <>
           <div className=""></div>
-          {hidden === true ? (
+          {hidden !== true ? (
             <div
               className=" rounded-xl flex justify-center items-center bg-[#272727] border-[2px] border-[orange] w-[60px] h-[60px] m-[5px] "
               onClick={() => {
