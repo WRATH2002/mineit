@@ -97,7 +97,7 @@ function App() {
                   <div class="confetti-piece"></div>
                 </div>
               </div>
-              <div className="text-[black] font-[rubik] w-[150px] h-[100px] rounded-lg border-[2px] border-[#40e9f2] z-50">
+              <div className="text-[black] font-[rubik] w-[150px] h-[100px] rounded-lg border-[2px] border-[#40e9f2] ">
                 <div className="w-full h-[50px] bg-[#40e9f2] flex justify-center items-center text-[20px] ">
                   Won
                 </div>
