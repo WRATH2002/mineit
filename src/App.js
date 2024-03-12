@@ -133,10 +133,10 @@ function App() {
       )}
 
       <div
-        className="w-full h-[260px] flex justify-center items-center flex-col  pt-[20px] "
+        className="w-full h-[220px] flex justify-start items-center flex-col pt-[40px] "
         style={{ transition: ".5s" }}
       >
-        <div className="text-white text-[50px] font-[rubik] font-bold flex justify-center items-end h-[60px] ">
+        <div className="text-white text-[50px] font-[rubik] font-bold flex justify-center items-end h-[60px] mt-[20px]">
           <FaBomb className="text-[70px] mb-[19px]" />
           <span className="h-full flex justify-start items-end ">MINE IT</span>
         </div>
@@ -327,7 +327,7 @@ function App() {
       {gameStart === true ? (
         <>
           <div
-            className="w-[350px] mt-[30px]  h-[350px]  md:w-[450px] lg:w-[450px]  flex justify-center items-center flex-wrap "
+            className="w-[350px] mt-[30px]  h-[350px]   flex justify-center items-center flex-wrap "
             style={{ transition: ".5s" }}
           >
             {Array(25)
@@ -351,7 +351,7 @@ function App() {
               })}
           </div>
           <div
-            className="w-full h-[calc(100%-640px)]  flex justify-center items-center "
+            className="w-full h-[calc(100%-600px)]  flex justify-center items-center "
             style={{ transition: ".5s" }}
           >
             <button

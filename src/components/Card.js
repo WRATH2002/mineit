@@ -59,7 +59,7 @@ const Card = (props) => {
           <div className=""></div>
           {hidden === true ? (
             <div
-              className=" rounded-xl flex justify-center items-center bg-[#272727] border-[2px] border-[orange] w-[60px] md:w-[70px] lg:w-[70px] h-[60px] md:h-[70px] lg:h-[70px] m-[5px] "
+              className=" rounded-xl flex justify-center items-center bg-[#272727] border-[2px] border-[orange] w-[60px] h-[60px] m-[5px] "
               onClick={() => {
                 // check(props.index);
                 // checkBomb(props.index);
@@ -70,7 +70,7 @@ const Card = (props) => {
             </div>
           ) : (
             <div
-              className=" rounded-xl flex justify-center items-center hover:border-[2px] cursor-pointer hover:border-[#464646] bg-[#272727] w-[60px] md:w-[70px] lg:w-[70px] h-[60px] md:h-[70px] lg:h-[70px] m-[5px]  "
+              className=" rounded-xl flex justify-center items-center hover:border-[2px] cursor-pointer hover:border-[#464646] bg-[#272727] w-[60px] h-[60px] m-[5px]  "
               onClick={() => {
                 checkBomb(props.index);
                 setHidden(true);
@@ -84,7 +84,7 @@ const Card = (props) => {
         <>
           {hidden === true ? (
             <div
-              className=" rounded-xl flex justify-center items-center bg-[#272727] border-[2px] border-[#40e9f2] w-[60px] md:w-[70px] lg:w-[70px] h-[60px] md:h-[70px] lg:h-[70px] m-[5px]  "
+              className=" rounded-xl flex justify-center items-center bg-[#272727] border-[2px] border-[#40e9f2] w-[60px] h-[60px] m-[5px]  "
               onClick={() => {
                 // check(props.index);
               }}
@@ -93,7 +93,7 @@ const Card = (props) => {
             </div>
           ) : (
             <div
-              className=" rounded-xl flex justify-center items-center hover:border-[2px] cursor-pointer hover:border-[#464646] bg-[#272727] w-[60px] md:w-[70px] lg:w-[70px] h-[60px] md:h-[70px] lg:h-[70px] m-[5px]  "
+              className=" rounded-xl flex justify-center items-center hover:border-[2px] cursor-pointer hover:border-[#464646] bg-[#272727] w-[60px] h-[60px] m-[5px]  "
               onClick={() => {
                 countScore(props.index);
                 setHidden(true);
